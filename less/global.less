@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Nunito&display=swap');
 
+div{
+    border: 1px solid black;
+}
+
 html{
     font-size: 62.5%;
     color: @gray900;
@@ -17,17 +21,20 @@ h3{
 }
 
 h1, h2, h3, h4, h5, h6, a{
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6, a, p{
     font-family: @header-font;
 }
 
 body{
-    padding: 0px 10%;
     background: @white;
 }
 
 p{
     font-size: 2.0rem;
-    font-family: @paragraph-font;
+    // font-family: @paragraph-font;
     line-height: 2.1rem;
 }
 

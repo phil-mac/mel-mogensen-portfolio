@@ -138,6 +138,9 @@ table {
   font-display: swap;
   src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaE.ttf) format('truetype');
 }
+div {
+  border: 1px solid black;
+}
 html {
   font-size: 62.5%;
   color: #1A202C;
@@ -159,15 +162,23 @@ h4,
 h5,
 h6,
 a {
+  text-transform: uppercase;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
   font-family: 'Nunito', sans-serif;
 }
 body {
-  padding: 0px 10%;
   background: white;
 }
 p {
   font-size: 2rem;
-  font-family: 'Lora', serif;
   line-height: 2.1rem;
 }
 button {
@@ -227,6 +238,8 @@ footer p {
   }
 }
 #projects {
+  width: 80%;
+  margin: 0px 10%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -263,13 +276,16 @@ footer p {
   margin: 1rem 0%;
   text-align: center;
 }
+#about {
+  width: 80%;
+  margin: 0px 10%;
+}
 #about .hey {
   height: 70px;
   width: 80%;
   margin: 2rem 0;
 }
 #about .about-cont {
-  border: 1px solid black;
   display: flex;
   flex-wrap: none;
   flex-direction: column;
@@ -295,7 +311,6 @@ footer p {
   }
 }
 #about .about-text {
-  border: 1px solid black;
   text-align: center;
   width: 100%;
   padding: 0 4rem;
@@ -323,4 +338,105 @@ footer p {
   font-size: 2rem;
   font-size: 3.5rem;
   margin: 0 10px;
+}
+.section-bar {
+  background: #E2E8F0;
+  text-align: center;
+  padding: 1rem 0;
+}
+.text-cont {
+  padding: 2rem;
+}
+.text-cont h3,
+.text-cont h4,
+.text-cont p {
+  margin: 1rem 0;
+}
+.section-content {
+  width: 80%;
+  margin: 0px 10%;
+  margin: 5rem auto;
+}
+.default img {
+  width: 50%;
+}
+.gray {
+  background: #E2E8F0;
+}
+.right-left {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.right-left .left,
+.right-left .right {
+  width: 48%;
+}
+.top-bottom {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.top-bottom .top,
+.top-bottom .bottom {
+  width: 100%;
+}
+.abena-web-composite {
+  height: 500px;
+  width: 48%;
+  position: relative;
+}
+.abena-web-composite img {
+  width: 300px;
+  height: 300px;
+}
+.abena-web-composite .abs {
+  position: absolute;
+}
+.abena-web-composite .one {
+  top: 180px;
+  left: 50px;
+}
+.abena-web-composite .two {
+  top: 80px;
+  left: 150px;
+}
+.top-bottom-sub {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.top-bottom-sub img {
+  height: 150px;
+  width: 100%;
+}
+.top-bottom-sub .text-cont {
+  width: 90%;
+}
+.right-left-sub {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.right-left-sub img {
+  height: 150px;
+  width: 50%;
+}
+.bandages {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bandages img {
+  width: 10%;
 }
