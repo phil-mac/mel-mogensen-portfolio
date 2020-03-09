@@ -1,0 +1,326 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaE.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+  color: #1A202C;
+}
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 2.3rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: 'Nunito', sans-serif;
+}
+body {
+  padding: 0px 10%;
+  background: white;
+}
+p {
+  font-size: 2rem;
+  font-family: 'Lora', serif;
+  line-height: 2.1rem;
+}
+button {
+  font-size: 2.5rem;
+}
+.nav-header,
+footer {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+  text-align: center;
+}
+.nav-header h2,
+footer h2 {
+  margin: 2rem 0;
+  color: #CBD5E0;
+}
+.nav-header nav,
+footer nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-header nav a,
+footer nav a {
+  color: #A0AEC0;
+  text-decoration: none;
+  font-size: 2rem;
+  font-size: 2.2rem;
+  padding-right: 15px;
+}
+@media (min-width: 840px) {
+  .nav-header nav a,
+  footer nav a {
+    padding: 15px;
+  }
+}
+.nav-header nav a:hover,
+footer nav a:hover {
+  transition: 0.2s;
+  color: #1A202C;
+}
+.nav-header nav .active,
+footer nav .active {
+  color: #1A202C;
+}
+.nav-header p,
+footer p {
+  padding: 20px 0;
+}
+@media (min-width: 840px) {
+  .nav-header p,
+  footer p {
+    text-align: center;
+  }
+}
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#projects .proj {
+  font-size: 2rem;
+  width: 98%;
+  margin: 1rem 0;
+  text-decoration: none;
+  color: #1A202C;
+  transition: 0.5s ease;
+}
+@media (min-width: 840px) {
+  #projects .proj {
+    width: 48%;
+  }
+}
+#projects .proj:hover {
+  opacity: 0.5;
+}
+#projects .proj .preview-cont {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+#projects .proj img {
+  position: absolute;
+  margin: auto;
+}
+#projects .proj .text-cont {
+  margin: 1rem 0%;
+  text-align: center;
+}
+#about .hey {
+  height: 70px;
+  width: 80%;
+  margin: 2rem 0;
+}
+#about .about-cont {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 840px) {
+  #about .about-cont {
+    display: flex;
+    flex-wrap: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+#about .about-img {
+  width: 100%;
+  max-width: 100%;
+}
+@media (min-width: 840px) {
+  #about .about-img {
+    width: 39%;
+  }
+}
+#about .about-text {
+  border: 1px solid black;
+  text-align: center;
+  width: 100%;
+  padding: 0 4rem;
+}
+@media (min-width: 840px) {
+  #about .about-text {
+    width: 53%;
+  }
+}
+#about .about-text p {
+  margin: 2rem 0;
+  line-height: normal;
+}
+#about .about-text .email {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+#about .social-icons {
+  margin-top: 20px;
+  margin: 2rem 0;
+}
+#about .social-icons a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-size: 3.5rem;
+  margin: 0 10px;
+}

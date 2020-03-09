@@ -1,0 +1,47 @@
+.nav-header, footer{
+    // border: 1px solid black;
+    
+    .flex(column, space-between, none);
+    padding: 4rem 0;
+    text-align: center;
+
+    h2{
+        margin: 2rem 0;
+        color: @gray400;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            color: @gray500;
+            text-decoration: none;
+            font-size: 2.0rem;
+
+            font-size: 2.2rem;
+
+            padding-right: 15px;
+
+            @media @tablet{
+                padding: 15px;
+            }
+
+            &:hover{
+                transition: 0.2s;
+                color: @gray900;
+            }
+            
+        }
+        .active{
+            color:@gray900;
+        }
+    }
+
+    p{
+        padding: 20px 0;
+        @media @tablet{
+            text-align: center;
+        }
+    }
+}
