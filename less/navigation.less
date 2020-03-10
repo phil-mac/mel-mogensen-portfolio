@@ -1,9 +1,25 @@
 .nav-header, footer{
     // border: 1px solid black;
+
+    .logo-div{
+        .flex(row, space-between, none);
+        img{
+            width: 10rem;
+            margin-right: 2rem;
+        }
+    }
+
+    h1, h2, h3, h4, h5, h6, a{
+        text-transform: uppercase;
+    }
     
     .flex(column, space-between, none);
     padding: 4rem 0;
     text-align: center;
+
+    h1{
+        color: @gray700;
+    }
 
     h2{
         margin: 2rem 0;
@@ -17,14 +33,12 @@
         a{
             color: @gray500;
             text-decoration: none;
-            font-size: 2.0rem;
 
-            font-size: 2.2rem;
 
-            padding-right: 15px;
+            padding-right: 3rem;
 
             @media @tablet{
-                padding: 15px;
+                padding: 1.4rem 4rem;
             }
 
             &:hover{
@@ -35,6 +49,16 @@
         }
         .active{
             color:@gray900;
+        }
+    }
+    .mainnav{
+        a{
+            font-size: 2.2rem;
+        }
+    }
+    .subnav{
+        a{
+            font-size: 1.4rem;
         }
     }
 

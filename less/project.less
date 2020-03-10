@@ -1,96 +1,124 @@
-.section-bar{
-    background: @gray300;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-.text-cont{
-    padding: 2rem;
-
-    h3, h4, p{
-        margin: 1rem 0;
+#project-details{
+    .section-bar{
+        background: @gray300;
+        text-align: center;
+        padding: 1rem 0;
+        
+        h3{
+            text-transform: uppercase;
+        }
     }
-}
-
-.section-content{
-    .limit-max-width();
-    margin: 5rem auto;
-}
-
-.default{
-    img{
-        width: 100%;
-    }
-}
-
-.gray{
-    background: @gray300;
-}
-
-.right-left{
-    .flex(row, space-evenly, none);
-
-    .left, .right{
-        width: 48%;
-    }
-}
-
-.top-bottom{
-    .flex(column, space-evenly, none);
-
-    .top, .bottom{
-        width: 100%;
-    }
-}
-
-// --- ----------- - -- -  -- - -  -- 
-
-.abena-web-composite{
-    height: 500px;
-    width: 48%;
-    position: relative;
-
-    img{
-        width: 300px;
-        height: 300px;
-    }
-    .abs{
-        position: absolute;
-    }
-    .one{
-        top: 180px;
-        left: 50px;
-    }
-    .two{
-        top: 80px;
-        left: 150px;
-    }
-}
-
-.top-bottom-sub{
-    .flex(column, space-evenly, none);
-
-    img{
-        height: 150px;
-        width: 100%;
-    }
+    
     .text-cont{
-        width: 90%;
+        padding: 2rem;
+    
+        h4, h5, p{
+            margin: 1.5rem 0;
+        }
+
+        h4{
+            font-weight: bold;
+        }
+
+        h5{
+            font-weight: 100;
+            font-style: italic;
+            color: @gray600;
+        }
+        p{
+            color: @gray700;
+        }
+        
     }
-}
-
-.right-left-sub{
-    .flex(row, space-evenly, none);
-
-    img{
-        height: 150px;
-        width: 50%;
+    
+    .section-content{
+        .limit-max-width();
+        padding: 4rem;
+        margin: 2rem auto;
     }
-}
+    
+    .default{
+        img{
+            width: 100%;
+        }
+    }
+    
+    .gray{
+        background: @gray100;
+    }
+    
+    .right-left{
+        .flex(row, space-evenly, none);
+    
+        .left, .right{
+            width: 48%;
+        }
 
-.bandages{
-    .flex(row, space-evenly, wrap);
-    img{
-        width: 10%;
+        .two-third-image{
+            width: 65%;
+        }
+        .one-third-text{
+            width: 32%;
+        }
+    }
+    
+    .top-bottom{
+        .flex(column, space-evenly, none);
+    
+        .top, .bottom{
+            width: 100%;
+        }
+    }
+    
+    // --- ----------- - -- -  -- - -  -- 
+    
+    .abena-web-composite{
+        height: 500px;
+        width: 48%;
+        position: relative;
+    
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        .abs{
+            position: absolute;
+        }
+        .one{
+            top: 180px;
+            left: 50px;
+        }
+        .two{
+            top: 80px;
+            left: 150px;
+        }
+    }
+    
+    .top-bottom-sub{
+        .flex(column, space-evenly, none);
+    
+        img{
+            height: 150px;
+            width: 100%;
+        }
+        .text-cont{
+            width: 90%;
+        }
+    }
+    
+    .right-left-sub{
+        .flex(row, space-evenly, none);
+    
+        img{
+            height: 150px;
+            width: 50%;
+        }
+    }
+    
+    .bandages{
+        .flex(row, space-evenly, wrap);
+        img{
+            width: 10%;
+        }
     }
 }
