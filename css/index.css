@@ -264,7 +264,7 @@ footer p {
   }
 }
 #projects {
-  max-width: 900px;
+  max-width: 1100px;
   width: 80%;
   margin: 0px 10%;
   display: flex;
@@ -304,7 +304,7 @@ footer p {
   text-align: center;
 }
 #about {
-  max-width: 900px;
+  max-width: 1100px;
   width: 80%;
   margin: 0px 10%;
 }
@@ -395,7 +395,7 @@ footer p {
   color: #68635f;
 }
 #project-details .section-content {
-  max-width: 900px;
+  max-width: 1100px;
   width: 80%;
   margin: 0px 10%;
   padding: 4rem;
