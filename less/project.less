@@ -48,17 +48,30 @@
     }
     
     .right-left{
-        .flex(row, space-evenly, none);
+        .flex(column-reverse, space-evenly, none);
+        
+        @media @tablet{
+            .flex(row, space-evenly, none);
+        }
     
         .left, .right{
-            width: 48%;
+            width: 98%;
+            @media @tablet{
+                width: 48%;
+            }
         }
 
         .two-third-image{
-            width: 65%;
+            width: 98%;
+            @media @tablet{
+                width: 65%;
+            }
         }
         .one-third-text{
-            width: 32%;
+            width: 98%;
+            @media @tablet{
+                width: 32%;
+            }
         }
     }
 
@@ -72,18 +85,30 @@
     }
 
     .two-image{
-        .flex(row, space-evenly, none);
+        .flex(column-reverse, space-evenly, none);
+        @media @tablet{
+            .flex(row, space-evenly, none);
+        }
     
         .default{
-            width: 32%;
+            width: 98%;
+            @media @tablet{
+                width: 32%;
+            }
         }
 
         .small{
-            width: 25%;
+            width: 98%;
+            @media @tablet{
+                width: 25%;
+            }
         }
 
         .large{
-            width: 39%;
+            width: 98%;
+            @media @tablet{
+                width: 39%;
+            }
         }
 
         img{

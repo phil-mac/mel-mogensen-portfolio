@@ -1,11 +1,14 @@
 .nav-header, footer{
-    // border: 1px solid black;
-
     .logo-div{
         .flex(row, space-between, none);
         img{
-            width: 10rem;
-            margin-right: 2rem;
+            width: 6rem;
+            margin-right: 1rem;
+
+            @media @tablet{
+                width: 10rem;
+                margin-right: 2rem;
+            }
         }
     }
 
@@ -34,8 +37,7 @@
             color: @gray500;
             text-decoration: none;
 
-
-            padding-right: 3rem;
+            padding-right: 1.5rem;
 
             @media @tablet{
                 padding: 1.4rem 4rem;
@@ -53,12 +55,20 @@
     }
     .mainnav{
         a{
-            font-size: 2.2rem;
+            font-size: 1.4rem;
+            @media @tablet{
+                font-size: 2.2rem;
+            }
         }
     }
     .subnav{
         a{
-            font-size: 1.4rem;
+            font-size: 1.0rem;
+            padding-top: 1rem;
+
+            @media @tablet{
+                font-size: 1.4rem;
+            }
         }
     }
 
