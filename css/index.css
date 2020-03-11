@@ -435,6 +435,25 @@ footer p {
 #project-details .top-bottom .bottom {
   width: 100%;
 }
+#project-details .two-image {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#project-details .two-image .default {
+  width: 32%;
+}
+#project-details .two-image .small {
+  width: 25%;
+}
+#project-details .two-image .large {
+  width: 39%;
+}
+#project-details .two-image img {
+  width: 100%;
+}
 #project-details .abena-web-composite {
   height: 500px;
   width: 48%;
