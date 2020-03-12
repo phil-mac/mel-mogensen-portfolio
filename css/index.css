@@ -396,7 +396,7 @@ footer p {
 }
 #about .about-text .email {
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
 }
 #about .social-icons {
   margin-top: 20px;
@@ -443,6 +443,9 @@ footer p {
 }
 #project-details .text-cont p {
   color: #68635f;
+}
+#project-details .text-cont a {
+  font-size: 1.3rem;
 }
 #project-details .section-content {
   width: 80%;
