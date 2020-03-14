@@ -319,7 +319,7 @@ footer p {
 }
 @media (min-width: 840px) {
   #projects .proj {
-    width: 48%;
+    width: 30%;
   }
 }
 #projects .proj:hover {
@@ -327,13 +327,10 @@ footer p {
 }
 #projects .proj .preview-cont {
   width: 100%;
-  height: 400px;
-  overflow: hidden;
-  position: relative;
 }
 #projects .proj img {
-  position: absolute;
-  margin: auto;
+  margin: auto auto;
+  width: 90%;
 }
 #projects .proj .text-cont {
   margin: 1rem 0%;
