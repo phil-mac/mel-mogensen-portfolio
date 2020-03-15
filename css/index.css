@@ -310,6 +310,13 @@ footer p {
   align-items: center;
 }
 #projects .proj {
+  background: #eeeeee;
+  padding: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   font-size: 2rem;
   width: 98%;
   margin: 1rem 0;
@@ -319,18 +326,25 @@ footer p {
 }
 @media (min-width: 840px) {
   #projects .proj {
-    width: 30%;
+    width: 44%;
   }
 }
 #projects .proj:hover {
   opacity: 0.5;
+  transform: scale(1.03);
 }
 #projects .proj .preview-cont {
   width: 100%;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 #projects .proj img {
   margin: auto auto;
-  width: 90%;
+  width: 100%;
 }
 #projects .proj .text-cont {
   margin: 1rem 0%;
@@ -384,7 +398,7 @@ footer p {
 }
 @media (min-width: 840px) {
   #about .about-text {
-    width: 53%;
+    width: 45%;
   }
 }
 #about .about-text p {
@@ -423,7 +437,7 @@ footer p {
   text-transform: uppercase;
 }
 #project-details .text-cont {
-  padding: 2rem;
+  padding: 2rem 4rem 4rem 4rem;
 }
 #project-details .text-cont h4,
 #project-details .text-cont h5,
@@ -588,4 +602,10 @@ footer p {
   #project-details .bandages img {
     width: 13%;
   }
+}
+#project-details .site .site-main {
+  width: 40%;
+}
+#project-details .site .site-side {
+  width: 60%;
 }
