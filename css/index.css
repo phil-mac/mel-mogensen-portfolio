@@ -152,13 +152,28 @@ h2 {
   }
 }
 h3 {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
+}
+@media (min-width: 840px) {
+  h3 {
+    font-size: 2.1rem;
+  }
 }
 h4 {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
+}
+@media (min-width: 840px) {
+  h4 {
+    font-size: 1.9rem;
+  }
 }
 h5 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+@media (min-width: 840px) {
+  h5 {
+    font-size: 1.5rem;
+  }
 }
 h1,
 h2,
@@ -174,9 +189,14 @@ body {
   background: white;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   font-family: 'Montserrat', sans-serif;
   line-height: 2.4rem;
+}
+@media (min-width: 840px) {
+  p {
+    font-size: 1.6rem;
+  }
 }
 button {
   font-size: 2.5rem;
@@ -310,16 +330,13 @@ footer p {
   align-items: center;
 }
 #projects .proj {
-  background: #eeeeee;
-  padding: 1%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 2rem;
   width: 98%;
-  margin: 1rem 0;
+  margin-bottom: 2rem;
   text-decoration: none;
   color: #292826;
   transition: 0.5s ease;
@@ -335,20 +352,18 @@ footer p {
 }
 #projects .proj .preview-cont {
   width: 100%;
-  height: 350px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 #projects .proj img {
   margin: auto auto;
   width: 100%;
 }
 #projects .proj .text-cont {
-  margin: 1rem 0%;
   text-align: center;
+  text-transform: uppercase;
+  color: #68635f;
+}
+#projects .proj .text-cont h3 {
+  font-size: 1.4rem;
 }
 @font-face {
   font-family: 'Calligraffitti';
@@ -364,12 +379,17 @@ footer p {
 }
 #about .hey {
   font-family: 'Calligraffitti', cursive;
-  font-size: 4.3rem;
+  font-size: 2.9rem;
+}
+@media (min-width: 840px) {
+  #about .hey {
+    font-size: 4.3rem;
+  }
 }
 #about .about-cont {
   display: flex;
   flex-wrap: none;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
 }
@@ -384,21 +404,24 @@ footer p {
 }
 #about .about-img {
   width: 100%;
+  margin-bottom: 20px;
   max-width: 100%;
 }
 @media (min-width: 840px) {
   #about .about-img {
     width: 42%;
+    margin-bottom: 0px;
   }
 }
 #about .about-text {
   text-align: center;
   width: 100%;
-  padding: 0 4rem;
+  padding: 0 10px;
 }
 @media (min-width: 840px) {
   #about .about-text {
-    width: 45%;
+    padding: 0 40px;
+    width: 46%;
   }
 }
 #about .about-text p {
@@ -425,8 +448,12 @@ footer p {
   width: 80%;
   max-width: 1100px;
   margin: 0px auto;
-  margin: 4rem auto;
-  margin-bottom: 8rem;
+  margin: 0rem auto 4rem auto;
+}
+@media (min-width: 840px) {
+  #project-details .page-header {
+    margin: 4rem auto 8rem auto;
+  }
 }
 #project-details .section-bar {
   background: #eeeeee;
@@ -436,8 +463,25 @@ footer p {
 #project-details .section-bar h3 {
   text-transform: uppercase;
 }
+#project-details .section-content {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0px auto;
+  padding: 3rem 2rem;
+  margin: 1rem auto 2rem auto;
+}
+@media (min-width: 840px) {
+  #project-details .section-content {
+    margin: 2rem auto 4rem auto;
+  }
+}
 #project-details .text-cont {
-  padding: 2rem 4rem 4rem 4rem;
+  padding: 1rem;
+}
+@media (min-width: 840px) {
+  #project-details .text-cont {
+    padding: 2rem 4rem 4rem 4rem;
+  }
 }
 #project-details .text-cont h4,
 #project-details .text-cont h5,
@@ -457,13 +501,6 @@ footer p {
 }
 #project-details .text-cont a {
   font-size: 1.3rem;
-}
-#project-details .section-content {
-  width: 80%;
-  max-width: 1100px;
-  margin: 0px auto;
-  padding: 4rem;
-  margin: 2rem auto;
 }
 #project-details .default img {
   width: 100%;
@@ -527,12 +564,20 @@ footer p {
 #project-details .two-image {
   display: flex;
   flex-wrap: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#project-details .two-image-reverse {
+  display: flex;
+  flex-wrap: none;
   flex-direction: column-reverse;
   justify-content: space-evenly;
   align-items: center;
 }
 @media (min-width: 840px) {
-  #project-details .two-image {
+  #project-details .two-image,
+  #project-details .two-image-reverse {
     display: flex;
     flex-wrap: none;
     flex-direction: row;
@@ -540,31 +585,38 @@ footer p {
     align-items: center;
   }
 }
-#project-details .two-image .default {
+#project-details .two-image .default,
+#project-details .two-image-reverse .default {
   width: 98%;
 }
 @media (min-width: 840px) {
-  #project-details .two-image .default {
+  #project-details .two-image .default,
+  #project-details .two-image-reverse .default {
     width: 32%;
   }
 }
-#project-details .two-image .small {
+#project-details .two-image .small,
+#project-details .two-image-reverse .small {
   width: 63%;
 }
 @media (min-width: 840px) {
-  #project-details .two-image .small {
+  #project-details .two-image .small,
+  #project-details .two-image-reverse .small {
     width: 25%;
   }
 }
-#project-details .two-image .large {
+#project-details .two-image .large,
+#project-details .two-image-reverse .large {
   width: 98%;
 }
 @media (min-width: 840px) {
-  #project-details .two-image .large {
+  #project-details .two-image .large,
+  #project-details .two-image-reverse .large {
     width: 39%;
   }
 }
-#project-details .two-image img {
+#project-details .two-image img,
+#project-details .two-image-reverse img {
   width: 100%;
 }
 #project-details .right-left-reverse {
@@ -604,8 +656,18 @@ footer p {
   }
 }
 #project-details .site .site-main {
-  width: 40%;
+  width: 100%;
+}
+@media (min-width: 840px) {
+  #project-details .site .site-main {
+    width: 40%;
+  }
 }
 #project-details .site .site-side {
-  width: 60%;
+  width: 100%;
+}
+@media (min-width: 840px) {
+  #project-details .site .site-side {
+    width: 60%;
+  }
 }
