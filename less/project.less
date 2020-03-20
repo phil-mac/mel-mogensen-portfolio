@@ -23,50 +23,96 @@
         padding: 3rem 2rem;
         margin: 1rem auto 2rem auto;
         @media @tablet{
-            margin: 2rem auto 4rem auto;
+            margin: 20px auto 40px auto;
         }
-        // max-width: 100%;
+
+        .text-cont{
+            padding: 1rem;
+            @media @tablet{
+                padding: 2rem 4rem 4rem 4rem;
+            }
+        
+            h4, h5, p{
+                margin: 1.5rem 0;
+            }
+    
+            h4{
+                font-weight: bold;
+            }
+    
+            h5{
+                font-weight: 100;
+                font-style: italic;
+                color: @gray600;
+            }
+            p{
+                color: @gray700;
+            }
+            a{
+                font-size: 1.3rem;
+            }
+        }
     }
 
-    .art{
+    .art, .all-the-long-way{
         .limit-max-width();
-        margin: 1rem auto 2rem auto;
         .flex(column-reverse, center, none);
+        
+        margin: 3rem auto 2rem auto;
+        @media @tablet{
+            margin: 7rem auto 2rem auto;
+        }
 
         img{
-            max-width: 500px;
+            max-width: 100%;
+            max-height: 80vh;
         }
+        
     }
-    
-    .text-cont{
-        // padding: 2rem;
-        padding: 1rem;
+
+    .all-the-long-way{
+        .flex(column, center, none);
         @media @tablet{
-            padding: 2rem 4rem 4rem 4rem;
-        }
-        // border: 1px solid red;
-    
-        h4, h5, p{
-            margin: 1.5rem 0;
+            .flex(row, center, none);
         }
 
-        h4{
-            font-weight: bold;
+        .vert-art{
+            margin: 0 40px;
+            @media @tablet{
+                margin: 0 80px;
+            }
+        }
+
+        .tech{
+            margin-bottom: 30px;
+            @media @tablet{
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .art-text{
+        margin-top: 0.5rem;
+        @media @tablet{
+            margin-top: 2rem;
         }
 
         h5{
-            font-weight: 100;
             font-style: italic;
-            color: @gray600;
+            color: @gray700;
+            font-size: 1.4rem;
+            @media @tablet{
+                font-size: 2rem;
+            }
         }
         p{
             color: @gray700;
-        }
-        a{
-            font-size: 1.3rem;
+            font-size: 1.0rem;
+            @media @tablet{
+                font-size: 1.5rem;
+            }
         }
     }
-    
     
     .default{
         img{
@@ -105,7 +151,6 @@
             }
         }
     }
-
     
     .top-bottom{
         .flex(column, space-evenly, none);
@@ -154,8 +199,6 @@
         }
 
     }
-    
-    // --- ----------- - -- -  -- - -  -- 
 
     .right-left-reverse{
         .flex(column-reverse, space-evenly, none);
@@ -194,7 +237,4 @@
             }
         }
     }
-    
-    
-    
 }
