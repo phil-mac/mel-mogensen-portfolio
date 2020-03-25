@@ -144,11 +144,11 @@ h1 {
   }
 }
 h2 {
-  font-size: 2.1rem;
+  font-size: 1.4rem;
 }
 @media (min-width: 840px) {
   h2 {
-    font-size: 3.1rem;
+    font-size: 1.7rem;
   }
 }
 h3 {
@@ -221,20 +221,18 @@ footer .logo-div {
 }
 .nav-header .logo-div img,
 footer .logo-div img {
-  width: 6rem;
+  width: 4rem;
   margin-right: 1rem;
 }
 @media (min-width: 840px) {
   .nav-header .logo-div img,
   footer .logo-div img {
-    width: 10rem;
+    width: 5rem;
     margin-right: 2rem;
   }
 }
 .nav-header h1,
 footer h1,
-.nav-header h2,
-footer h2,
 .nav-header h3,
 footer h3,
 .nav-header h4,
@@ -249,12 +247,13 @@ footer a {
 }
 .nav-header h1,
 footer h1 {
-  color: #68635f;
+  color: #968f8a;
+  font-weight: 100;
 }
 .nav-header h2,
 footer h2 {
-  margin: 2rem 0;
-  color: #dfdfdf;
+  margin: 2rem 0 3rem 0;
+  color: #c2bcb6;
 }
 .nav-header nav,
 footer nav {
@@ -265,7 +264,7 @@ footer nav {
 footer nav a {
   color: #c2bcb6;
   text-decoration: none;
-  padding-right: 1.5rem;
+  padding-right: 3rem;
 }
 @media (min-width: 840px) {
   .nav-header nav a,
